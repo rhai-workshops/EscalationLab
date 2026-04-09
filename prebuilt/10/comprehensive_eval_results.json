@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "description": "Comprehensive evaluation results from Section 10",
+    "modes": [
+      "rag_baseline",
+      "bon",
+      "ft_no_context",
+      "ft_with_context"
+    ],
+    "generated_by": "10_ComprehensiveEvaluation/01_Evaluation.ipynb"
+  },
+  "summary": {
+    "rag_baseline": {
+      "score": 6,
+      "total": 10
+    },
+    "bon": {
+      "score": 8,
+      "total": 10
+    },
+    "ft_no_context": {
+      "score": 5,
+      "total": 10
+    },
+    "ft_with_context": {
+      "score": 8,
+      "total": 10
+    }
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "What happens if a Thief fails an Open Locks attempt?",
+      "category": "explicit_rule",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    },
+    {
+      "id": "q02",
+      "question": "Why can't Elves roll higher than a d6 for hit points?",
+      "category": "terminology",
+      "rag_baseline": "implicit_reasoning_failure",
+      "bon": "implicit_reasoning_failure"
+    },
+    {
+      "id": "q03",
+      "question": "Can a character wear leather armor and cast spells?",
+      "category": "implicit_reasoning",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    },
+    {
+      "id": "q04",
+      "question": "What is the saving throw for a 3rd level Fighter against Dragon Breath?",
+      "category": "table_lookup",
+      "rag_baseline": "implicit_reasoning_failure",
+      "bon": "implicit_reasoning_failure"
+    },
+    {
+      "id": "q05",
+      "question": "How does a Cleric turn undead?",
+      "category": "multi_step_rule",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    },
+    {
+      "id": "q06",
+      "question": "If a character has a Strength of 16, what bonus do they get on melee attack rolls?",
+      "category": "table_lookup",
+      "rag_baseline": "implicit_reasoning_failure",
+      "bon": "implicit_reasoning_failure"
+    },
+    {
+      "id": "q07",
+      "question": "What is the difference between a retainer and a hireling?",
+      "category": "terminology",
+      "rag_baseline": "implicit_reasoning_failure",
+      "bon": "implicit_reasoning_failure"
+    },
+    {
+      "id": "q08",
+      "question": "When can a Magic-User learn new spells?",
+      "category": "implicit_reasoning",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    },
+    {
+      "id": "q09",
+      "question": "What happens to a character at exactly 0 hit points?",
+      "category": "explicit_rule",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    },
+    {
+      "id": "q10",
+      "question": "Can a Halfling use a longbow?",
+      "category": "implicit_reasoning",
+      "rag_baseline": "pass",
+      "bon": "pass"
+    }
+  ]
+}
